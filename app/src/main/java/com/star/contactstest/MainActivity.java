@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mContactsListView = (ListView) findViewById(R.id.contacts_list_view);
+        mContactsListView = findViewById(R.id.contacts_list_view);
         mArrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,
                 mContactsList);
         mContactsListView.setAdapter(mArrayAdapter);
